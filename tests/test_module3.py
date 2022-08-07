@@ -558,7 +558,7 @@ def test_parsers_rst_menu_filter_module3(parse):
 
     assert (
         hooks_filter_exists
-    ), 'Are you calling `hooks.filter()` and assigning it to a variable called `filtered`? And are you passing in `"generate_menu"`, `html`,  and `self.base_ext`?'
+    ), 'Are you calling `hooks.filter()` and assigning it to a variable called `filtered`? And are you passing in `"generate_menu"`, `html["html_body"]`,  and `self.base_ext`?'
 
     self_write_exists = (
         rst_parse.calls()
